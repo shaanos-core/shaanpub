@@ -1,0 +1,26 @@
+{
+  "name": "ShaanOS",
+  "url": "https://social.os.shaanvision.com.tr",
+  "ogImage": "https://www.shaanvision.com.tr/logo.png",
+  "description": "ShaanOS: Lightweight, modern, and extensible operating system experience online.",
+  "author": {
+    "name": "Shaan OS",
+    "summary": "Creator of ShaanOS and ShaanVision projects.",
+    "icon": "https://www.shaanvision.com.tr/logo.png",
+    "image": "https://www.shaanvision.com.tr/logo.png",
+    "handle": "shaanos",
+    "manuallyApprovesFollowers": false,
+    "bio": "Developer and creator focused on decentralized web technologies and ShaanOS.",
+    "avatar": "https://www.shaanvision.com.tr/logo.png",
+    "links": [
+      {
+        "label": "Website",
+        "href": "https://shaanvision.com.tr"
+      },
+      {
+        "label": "GitHub",
+        "href": "https://github.com/shaanvision"
+      }
+    ]
+  }
+}
