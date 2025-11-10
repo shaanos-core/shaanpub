@@ -1,4 +1,17 @@
 # Redirects for ActivityPub
+
+# Handle direct requests for .json files to prevent Next.js router interference
+/users/:username.json /users/:username.json 200
+/inbox.json /inbox.json 200
+/users/:username/inbox.json /users/:username/inbox.json 200
+/users/:username/outbox.json /users/:username/outbox.json 200
+/users/:username/followers.json /users/:username/followers.json 200
+/users/:username/following.json /users/:username/following.json 200
+/users/:username/collections/featured.json /users/:username/collections/featured.json 200
+/users/:username/collections/tags.json /users/:username/collections/tags.json 200
+/users/:username/posts/:slug.json /users/:username/posts/:slug.json 200
+
+# Handle extensionless URLs
 /users/:username /users/:username.json 200
 /@:username /@:username/index.html 200
 /users/:username/inbox /users/:username/inbox.json 200

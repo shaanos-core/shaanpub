@@ -5,7 +5,7 @@ import { dirname, join } from "path";
 import config from "../config.json" assert { type: "json" };
 import postsData from "../posts.json" assert { type: "json" };
 
-const OUT_DIR = join(process.cwd(), "out");
+const OUT_DIR = join(process.cwd(), "public");
 const BASE_URL = config.url;
 const HANDLE = config.author.handle;
 const DOMAIN = new URL(BASE_URL).hostname;
@@ -163,6 +163,7 @@ async function generateActor(publicKey: string) {
     endpoints: { sharedInbox: `${BASE_URL}/inbox.json` },
     url: `${BASE_URL}/@${HANDLE}`,
     manuallyApprovesFollowers: config.author.manuallyApprovesFollowers,
+    published: (config.author as any).published,
     discoverable: true,
     indexable: true,
     icon: {
