@@ -1,12 +1,11 @@
-# ActivityPub Rewrites
-/.well-known/webfinger    /.well-known/webfinger   200
-/.well-known/nodeinfo     /.well-known/nodeinfo.json   200
-
-/ap/actor                 /ap/actor.json             200
-/ap/inbox                 /ap/inbox.json             200
-/ap/outbox                /ap/outbox.json            200
-/ap/followers             /ap/followers.json         200
-/ap/following             /ap/following.json         200
-/ap/nodeinfo              /ap/nodeinfo.json          200
-
-/ap/posts/:slug           /ap/posts/:slug.json       200
+# Redirects for ActivityPub
+/users/:username /users/:username.json 200
+/@:username /@:username/index.html 200
+/users/:username/inbox /users/:username/inbox.json 200
+/users/:username/outbox /users/:username/outbox.json 200
+/users/:username/followers /users/:username/followers.json 200
+/users/:username/following /users/:username/following.json 200
+/users/:username/collections/featured /users/:username/collections/featured.json 200
+/users/:username/collections/tags /users/:username/collections/tags.json 200
+/inbox /inbox.json 200
+/users/:username/posts/:slug /users/:username/posts/:slug.json 200
